@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>HIGH</h1>
+            <form id="HIGH_FORM"> 
+                <input type="text" class="high__input" placeholder="Добавить важных дел" value="">
+                <button class="add__high btn"><img src="./img/plus-icon.svg"></button>
+            </form>
+            <div class="task__space-high">
+            </div>
+            <h1>LOW</h1>
+            <form id="LOW_FORM">
+                <input type="text" class="low__input" placeholder="Добавить">
+                <button class="add__low btn"><img src="./img/plus-icon.svg"></button>
+            </form>
+                <div class="task__space-low">
+                </div>
+            </div>
+        </div>
+        <template id="TASK">
+            <div class="task">
+                <label class="label">
+                    <input class="checkbox" type="checkbox">
+                    <span class="fake"></span>
+                </label>
+                <p>Вот вам и супер интересная тема. 
+                    Вы наверняка заметили что ваши файлы с кодом становятся все объемнее, что хочется вынести некоторые вещи куда-то за пределы основной программы.</p>
+                <button class="close__btn">x</button>
+            </div>
+        </template>
+    </body>
+    <script type="module" src="./js/view.js"></script>
+</html>

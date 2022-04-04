@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* Conteiner */
+
+.container {
+    margin: 0 auto;
+    max-width: 476px;
+    max-height: 688px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form */
+h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+form {
+    max-width: 460px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+}
+
+form:active {
+    border-color: black;
+}
+
+.high__input {
+    border: none;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.low__input {
+    border: none;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn {
+    border: none;
+    max-width: 15px;
+    max-height: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.close__btn {
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.add__high {
+    margin-top: 10px;
+}
+.add__low {
+    margin-top: 10px;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 460px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+    margin-top: 7px;
+    padding-bottom: 5px;
+}
+
+.checked__task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 460px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+    margin-top: 7px;
+    padding-bottom: 5px;
+    background-color: #F4F4F4;
+    ;
+}
+
+p {
+    width: 370px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.checkbox {
+    margin: 10px;
+}
+
+.check__btn {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.not__checked {
+    position: absolute;
+}
+
+.checked {
+    margin-top: 3px;
+    margin-left: 3px;
+    opacity: 0;
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    display: inline-block;
+    margin: 12px;
+    width: 20px;
+    height: 20px;
+    border:1px solid #998899;
+    position:relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fake::before{
+    content:'';
+    position:absolute;
+    display:block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+.empty__input {
+    border-color: red;
+}
